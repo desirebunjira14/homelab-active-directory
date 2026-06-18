@@ -1,5 +1,7 @@
 # 🏢 Homelab Phase 2 – Active Directory & User Management
 
-**Objective:** Build a foundational virtualized Windows environment to learn hardware resource management, OS installation, and networking basics.
+**Role alignment:** IT Support Specialist | Junior Sysadmin | Datacenter Technician | Helpdesk
+
+**Objective:** Build a fully functional domain from scratch and learn the daily tasks of an IT professional.
 
 ---
