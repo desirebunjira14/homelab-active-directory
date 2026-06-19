@@ -42,7 +42,7 @@
 
 ---
 
-- ## 🖥️ Client Machine (CLIENT1)
+### 🖥️ Client Machine (CLIENT1)
 
 | Property | Value |
 |----------|-------|
