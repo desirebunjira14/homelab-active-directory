@@ -91,25 +91,54 @@
 
  ## 🎯 Skills Learned & Applied
  
- 1. Active Directory Domain Services Installation
+ ### 1. Active Directory Domain Services Installation
 
 - Installed AD DS role on Windows Server 2022
 - Promoted server to a Domain Controller
 - Created a new forest with domain: mydomain.local
 - Configured DNS on the Domain Controller
 
- 2. Organizational Unit (OU) Structure
+ ### 2. Organizational Unit (OU) Structure
 
 - Created ADMINS OU for privileged accounts
 
- 3. User Account Management
+ ### 3. User Account Management
 
 - Created dedicated Domain Admin account (Admin-JSmith)
 - Learned naming conventions: First initial + Last name (e.g., jsmith)
 
- 4. Domain joining
+ ### 4. Domain joining
 
 - Joined CLIENT1 to mydomain.local
-- Tested domain login with multiple user accounts
+- Tested domain login 
 - Verified network connectivity across the domain
 
+## ⚠️ Key Challenges & Workarounds
+
+### 1. Installed Server Core Instead of Desktop Experience
+- Challenge: VM booted to a black command prompt, not a desktop
+- Root Cause: Selected "Windows Server 2022 Standard" instead of "Windows Server 2022 Standard (Desktop Experience)" during installation
+- Workaround: Attempted GUI installation with PowerShell: Install-WindowsFeature Server-Gui-Mgmt-Infra, Server-Gui-Shell (50% success rate)
+- Recommended: Reinstall VM with correct "Desktop Experience" option selected
+
+### 2. Ctrl+Alt+Delete Affected Main Computer Instead of VM 
+- Challenge: Pressing Ctrl+Alt+Delete on physical keyboard triggered main computer's lock screen, not the VM
+- Root Cause: Windows security feature intercepts Ctrl+Alt+Delete at the host level
+- Workaround: VirtualBox: Use menu → Input → Insert Ctrl+Alt+Delete
+
+### 3. Forgot Domain Administrator Password
+- Challenge: Couldn't log in as MYDOMAIN\Administrator
+- Root Cause: Default password was forgotten during the setup process
+- Solution: Default password was forgotten during the setup process
+
+Replace Utilman.exe with CMD
+
+cd C:\Windows\System32
+
+copy Utilman.exe Utilman.exe.bak
+
+copy cmd.exe Utilman.exe
+
+Restart → Click Accessibility icon → Command Prompt opens
+
+net user Administrator NewPassword123!
