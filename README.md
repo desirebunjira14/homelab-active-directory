@@ -88,3 +88,28 @@
 - DC01 has a static IP (172.16.0.1) on the Internal Network
 - DHCP Scope assigns IPs (172.16.0.100-200) to clients
 - CLIENT1 receives an IP via DHCP and joins the domain
+
+ ## 🎯 Skills Learned & Applied
+ 
+ 1. Active Directory Domain Services Installation
+
+- Installed AD DS role on Windows Server 2022
+- Promoted server to a Domain Controller
+- Created a new forest with domain: mydomain.local
+- Configured DNS on the Domain Controller
+
+ 2. Organizational Unit (OU) Structure
+
+- Created ADMINS OU for privileged accounts
+
+ 3. User Account Management
+
+- Created dedicated Domain Admin account (Admin-JSmith)
+- Learned naming conventions: First initial + Last name (e.g., jsmith)
+
+ 4. Domain joining
+
+- Joined CLIENT1 to mydomain.local
+- Tested domain login with multiple user accounts
+- Verified network connectivity across the domain
+
