@@ -5,9 +5,9 @@
 **Objective:** Build a fully functional domain from scratch and learn the daily tasks of an IT professional.
 
 ---
-📦 What I Built
+## 📦 What I Built
 
-## 🖥️ Domain Controller (DC01)
+### 🖥️ Domain Controller (DC01)
 
 | Property | Value |
 |----------|-------|
@@ -39,6 +39,8 @@
 - Configured with a static IP to ensure consistent network addressing.
 - DNS is set to loopback (`127.0.0.1`) as the server hosts its own DNS services.
 - Use the dedicated `admin.jsmith` account for administrative tasks.
+
+---
 
 - ## 🖥️ Client Machine (CLIENT1)
 
@@ -73,6 +75,8 @@
 - Can be used to test Group Policy application.
 - Good for testing user login, folder redirection, and printer deployment.
 
+---
+
 ## 🌐 Network Infrastructure
 
 | Component | Role | IP Address | Connection |
@@ -88,6 +92,8 @@
 - DC01 has a static IP (172.16.0.1) on the Internal Network
 - DHCP Scope assigns IPs (172.16.0.100-200) to clients
 - CLIENT1 receives an IP via DHCP and joins the domain
+
+---
 
  ## 🎯 Skills Learned & Applied
  
@@ -112,6 +118,8 @@
 - Joined CLIENT1 to mydomain.local
 - Tested domain login 
 - Verified network connectivity across the domain
+
+---
 
 ## ⚠️ Key Challenges & Workarounds
 
