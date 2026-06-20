@@ -112,6 +112,7 @@
 
 - Created dedicated Domain Admin account (Admin-JSmith)
 - Learned naming conventions: First initial + Last name (e.g., jsmith)
+- Configured user passwords and enforced password change at next login
 
  ### 4. Domain joining
 
